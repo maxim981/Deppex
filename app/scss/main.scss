@@ -1,0 +1,41 @@
+@import 'block/null';
+@import 'block/font';
+@import 'block/swiper-vars';
+@import 'block/swiper';
+@import 'block/variables';
+@import 'block/title';
+@import 'block/page-index';
+@import 'block/header';
+@import 'block/hero';
+@import 'block/circle-spin';
+@import 'block/must-have';
+@import 'block/about';
+@import 'block/demo';
+@import 'block/gallery';
+@import 'block/benefits';
+@import 'block/skill-table';
+@import 'block/step-method';
+@import 'block/purchase';
+@import 'block/footer';
+
+
+html {
+	font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: var(--text-dark);
+}
+
+body {
+	background: black;
+	line-height: 1;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1170px;
+	padding: 0 15px;
+}
+.container-fluid {
+}
+

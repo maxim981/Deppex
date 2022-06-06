@@ -1,0 +1,49 @@
+.purchase {
+	.title {
+		padding: 0;
+
+	}
+	.title__main {
+		font-size: 55px;
+		line-height: 1.25;
+	}
+	.title__subtitle {
+		margin-bottom: 50px;
+		color: var(--text-light);
+	}
+	border: 122px solid black;
+	overflow: hidden;
+	.purchase-wrapper {
+		height: 100vh;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__parallax-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-image: url('../img/purchase/1.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+	}
+	&__parallax-bg::before {
+		position: absolute;
+		content: '';
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background: rgba(0,0,0,0.7);
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}

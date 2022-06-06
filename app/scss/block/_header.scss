@@ -1,0 +1,39 @@
+.header {
+	color: white;
+	user-select: none;
+	transition: 0.4s;
+	height: 100px;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 13px;
+	letter-spacing: 0.05em;
+	.container {
+		height: 100%;
+	}
+	&__nav {
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&--height {
+		height: 50px;
+		background: var(--bg-dark);
+		box-shadow: 0 0 5px rgba(0, 0, 0, .35);
+		color: var(--text-dark);
+	}
+	&__nav-logo {
+	}
+	&__nav-list {
+		display: flex;
+	}
+	&__nav-link {
+	}
+	&__nav-item {
+		margin-left: 30px;
+	}
+	&__nav-item--active {
+		color: white;
+	}
+}
+

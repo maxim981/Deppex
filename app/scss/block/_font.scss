@@ -1,0 +1,20 @@
+@mixin fontFace($family, $url, $name, $weight) {
+	@font-face {
+		font-family: '#{$family}';
+		src: url('#{$url}/#{$name}.woff2') format('woff2'),
+			url('#{$url}/#{$name}.woff') format('woff');
+		font-weight: #{$weight};
+		font-style: normal;
+	}
+}
+
+@include fontFace('Oswald', '../font', 'Oswald-Regular', 400);
+@include fontFace('Oswald', '../font', 'Oswald-Bold', 700);
+
+
+@include fontFace('Montserrat', '../font', 'Montserrat-Regular', 400);
+@include fontFace('Montserrat', '../font', 'Montserrat-Bold', 700);
+
+@include fontFace('Raleway', '../font', 'Raleway-Regular', 400);
+@include fontFace('Raleway', '../font', 'Raleway-Medium', 500);
+@include fontFace('Raleway', '../font', 'Raleway-Bold', 700);

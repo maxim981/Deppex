@@ -1,0 +1,21 @@
+.benefits {
+	background: red;
+	background: var(--bg-dark);
+	.title {
+		background: var(--bg-light);
+	}
+	&__content {
+		min-height: 550px;
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
+	&__bg {
+		background: url('../img/benefits/1.jpg') center top no-repeat;
+	}
+	&__skills {
+		padding: 160px 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

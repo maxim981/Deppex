@@ -1,0 +1,40 @@
+.step-method {
+	padding-bottom: 120px;
+	background: var(--bg-light);
+	.title__main {
+		font-size: 75px;
+	}
+	&__steps {
+		padding: 0 30px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		display: grid;
+		grid-template-columns: auto 1fr;
+	}
+	&__title {
+		grid-column: span 2;
+		font-family: 'Oswald';
+		color: var(--text-light);
+		font-size: 15px;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding-bottom: 16px;
+	}
+	&__step {
+		font-family: 'Montserrat';
+		color: var(--text-light);
+		font-size: 140px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	&__info {
+		font-family: 'Raleway';
+		font-size: 14px;
+		line-height: 2;
+		letter-spacing: normal;
+		font-weight: 500;
+		padding: 0 20px 0 20px;
+	}
+}
