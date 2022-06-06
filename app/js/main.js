@@ -141,11 +141,9 @@ function watch(entries) {
 function readyDemos() {
 	let fps = 5;
 	setTimeout(()=> {
-		if(readyDemosVal < 12) {
-			readyDemosVal++;
-			demos.innerHTML = readyDemosVal;
-			requestAnimationFrame(readyDemos);
-		}
+		readyDemosVal++;
+		demos.innerHTML = readyDemosVal;
+		if(readyDemosVal < 12) readyDemos();
 		else demosFlag = false;
 	}, 1000 / fps);
 
@@ -170,9 +168,7 @@ function benefitsProgress() {
 		skillProgress.forEach(item=> {
 			item.style.width = skillVal + '%';
 		})
-		if(skillVal < 100) {
-			requestAnimationFrame(benefitsProgress);
-		}
+		if(skillVal < 100) benefitsProgress();
 		else progressFlag = false;
 	}, 1000 / fps);
 }
